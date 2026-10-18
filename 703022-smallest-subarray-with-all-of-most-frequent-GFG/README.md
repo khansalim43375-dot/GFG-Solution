@@ -1,0 +1,6 @@
+# [Smallest Subarray with All of Most Frequent](https://www.geeksforgeeks.org/problems/smallest-subarray-with-all-occurrences-of-a-most-frequent-element2258/1)
+## Medium
+Given an array arr[], let x be an element with the maximum frequency in the array. Find the smallest sub-segment of the array in which x is also the element with the maximum frequency.Note: If two or more elements have the same maximum frequency and the same sub-segment size, return the sub-segment that occurs first in the array.Examples:Input : arr[] = [1, 2, 2, 3, 1]
+Output : [2, 2]
+Explanation: Note that there are two elements that appear two times, 1 and 2. The smallest window for 1 is whole array and smallest window for 2 is [2, 2]. Since window for 2 is smaller, this is our output.Input : arr[] = [1, 4, 3, 5, 3, 5] 
+Output : [3, 5, 3] Explanation: In this array, both 3 and 5 have the highest frequency of 3. However, the sub-segment [3, 5, 3] occurs earlier in the array than [5, 3, 5], so the correct output is [3, 5, 3].
