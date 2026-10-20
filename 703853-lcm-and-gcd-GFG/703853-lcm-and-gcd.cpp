@@ -1,28 +1,18 @@
 class Solution {
   public:
-    int gcd(int a, int b){
-        while(b != 0){
-            int rem = a % b;
+    long long gcd(long long a, long long b) {
+        while (b != 0) {
+            long long rem = a % b;
             a = b;
             b = rem;
-        
         }
-    return a;    
+        return a;
     }
-    vector<int> lcmAndGcd(int a, int b) {
-        // code here
-        int l;
-        int i = max(a,b);
-        
-        while(true){
-            if(i % a == 0 && i % b == 0){
-                l = i;
-                break;
-            }
-            i += max(a,b);
-        }
-    return {l,gcd(a,b)};    
-        
+
+    vector<int> lcmAndGcd(long long a, long long b) {
+        long long g = gcd(a, b);
+        long long l = (a / g) * b;   // divide first to avoid overflow
+        return {l, g};
     }
 };
 
