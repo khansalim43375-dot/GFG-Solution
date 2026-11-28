@@ -1,0 +1,5 @@
+# [Safe States](https://www.geeksforgeeks.org/problems/eventual-safe-states/1)
+## Medium
+Given a directed graph represented by an adjacency list adj[][], where adj[u] contains all vertices reachable from vertex u through a directed edge, find all the safe nodes in the graph.A terminal node is a vertex with no outgoing edges. A vertex is called safe if every possible path starting from it eventually reaches a terminal node. All terminal nodes are also considered safe nodes.Return all safe nodes in sorted order.Examples:&nbsp;Input: adj[][] = [[], [0, 2, 3, 4], [3], [4], []]Output: [0, 1, 2, 3, 4]
+Explanation: Nodes 0 and 4 have no outgoing edges, so they are terminal nodes. All paths starting from nodes 1, 2, and 3 eventually reach terminal node 4. Therefore, all nodes are safe.Input: adj[][] = [[], [2], [3], [2]]Output: [0]
+Explanation: Node 0 is a terminal node. Nodes 2 and 3 form a cycle, so they are not safe. Node 1 leads to the cycle, making it unsafe. Hence, only node 0 is a safe node.
