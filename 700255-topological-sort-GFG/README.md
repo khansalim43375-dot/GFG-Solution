@@ -1,0 +1,5 @@
+# [Topological Sort](https://www.geeksforgeeks.org/problems/topological-sort/1)
+## Medium
+Given a Directed Acyclic Graph (DAG) with V vertices numbered from 0 to V - 1, represented by an adjacency list adj[][], return a topological ordering of its vertices.A topological ordering is a linear ordering of vertices such that for every directed edge u -&gt; v, vertex u appears before vertex v in the ordering.Note: Multiple valid topological orderings may exist. Any valid ordering is accepted. The output is true if the returned ordering is valid; otherwise, it is false.Examples:Input: adj[][] = [[], [0], [0], [0]]Output: trueExplanation: The output true denotes that the order is valid. Few valid Topological orders for the given graph are:
+[3, 2, 1, 0][1, 2, 3, 0][2, 3, 1, 0]Input: adj[][] = [[], [3], [3], [], [1, 0], [0, 2]]Output: true
+Explanation: The output true denotes that the order is valid. Few valid Topological orders for the graph are:[4, 5, 0, 1, 2, 3][5, 2, 4, 0, 1, 3]
